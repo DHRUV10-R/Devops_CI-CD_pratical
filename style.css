@@ -1,0 +1,254 @@
+/* ===== Reset ===== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== Body ===== */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f7fb;
+    color: #333;
+}
+
+/* ===== Navigation ===== */
+
+nav {
+    background: #28a745;
+    color: white;
+    padding: 15px 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: yellow;
+}
+
+/* ===== Main Container ===== */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px;
+}
+
+/* ===== Card ===== */
+
+.card {
+    background: white;
+    width: 100%;
+    max-width: 500px;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,.15);
+}
+
+/* ===== Headings ===== */
+
+.card h1 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* ===== Paragraph ===== */
+
+.card p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/* ===== Form ===== */
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 6px;
+
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* ===== Buttons ===== */
+
+button {
+
+    width: 100%;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background: #0077cc;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+button:hover {
+
+    background: #1e7e34;
+}
+
+/* ===== Links ===== */
+
+a {
+    color: #0077cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ===== Utility Classes ===== */
+
+.text-center {
+    text-align: center;
+}
+
+/* ===== Horizontal Line ===== */
+
+hr {
+    margin: 20px 0;
+}
+
+/* ===== Home Feature Cards ===== */
+
+.feature-grid {
+
+    display: flex;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+
+    margin: 20px 0;
+}
+
+.feature-card {
+
+    flex: 1;
+
+    min-width: 180px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
+
+    padding: 20px;
+
+    text-align: center;
+
+    background: #fafafa;
+}
+
+.feature-card h3 {
+
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+
+    margin-bottom: 15px;
+}
+
+/* ===== Status Messages ===== */
+
+#uploadStatus,
+#saveStatus {
+
+    margin-top: 15px;
+
+    font-weight: bold;
+
+    color: green;
+}
+
+/* ===== Responsive ===== */
+
+@media (max-width: 768px) {
+
+    nav {
+
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    nav ul {
+
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .container {
+
+        padding: 20px;
+    }
+
+    .card {
+
+        width: 100%;
+    }
+
+    .feature-grid {
+
+        flex-direction: column;
+    }
+}

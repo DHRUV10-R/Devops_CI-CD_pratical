@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload | My Web App</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <h2>My Web App</h2>
+
+        <ul>
+            <li><a href="index.html">Login</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="upload.html" class="active">Upload</a></li>
+            <li><a href="edit.html">Edit</a></li>
+        </ul>
+    </nav>
+
+    <!-- Upload Section -->
+    <div class="container">
+
+        <div class="card">
+
+            <h1>Upload File</h1>
+
+            <p>Select a file from your computer and click the Upload button.</p>
+
+            <form id="uploadForm">
+
+                <div class="form-group">
+                    <label for="file">Choose File</label>
+
+                    <input
+                        type="file"
+                        id="file"
+                        accept=".jpg,.jpeg,.png,.pdf,.doc,.docx,.txt"
+                    >
+                </div>
+
+                <button
+                    type="button"
+                    onclick="uploadFile()"
+                >
+                    Upload
+                </button>
+
+            </form>
+
+            <br>
+
+            <p id="uploadStatus"></p>
+
+            <br>
+
+            <a href="home.html">
+                <button type="button">Back to Home</button>
+            </a>
+
+        </div>
+
+    </div>
+
+    <script src="js/upload.js"></script>
+
+</body>
+</html>

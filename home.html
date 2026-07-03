@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | My Web App</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <h2>My Web App</h2>
+
+        <ul>
+            <li><a href="index.html">Login</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="home.html" class="active">Home</a></li>
+            <li><a href="upload.html">Upload</a></li>
+            <li><a href="edit.html">Edit</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+
+        <div class="card">
+
+            <h1>Welcome to My Web Application</h1>
+
+<p>
+    You have successfully logged in.
+    Explore the Upload and Edit features using the navigation menu.
+</p>
+
+            <hr>
+
+            <h2>Available Features</h2>
+
+            <div class="feature-grid">
+
+                <div class="feature-card">
+                    <h3>📤 Upload Files</h3>
+                    <p>Upload images or documents.</p>
+                    <a href="upload.html">
+                        <button>Go to Upload</button>
+                    </a>
+                </div>
+
+                <div class="feature-card">
+                    <h3>✏️ Edit Content</h3>
+                    <p>Edit your saved information.</p>
+                    <a href="edit.html">
+                        <button>Go to Edit</button>
+                    </a>
+                </div>
+
+            </div>
+
+            <hr>
+
+            <button onclick="logout()">
+                Logout
+            </button>
+
+        </div>
+
+    </div>
+
+    <script>
+        function logout() {
+            alert("Logged out successfully!");
+            window.location.href = "index.html";
+        }
+    </script>
+
+</body>
+</html>
