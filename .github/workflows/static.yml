@@ -1,0 +1,40 @@
+name: HTML CI Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  validate-project:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Check HTML Files
+        run: |
+          test -f index.html
+          test -f register.html
+          test -f home.html
+          test -f upload.html
+          test -f edit.html
+
+      - name: Check CSS File
+        run: |
+          test -f css/style.css
+
+      - name: Check JavaScript Files
+        run: |
+          test -f js/login.js
+          test -f js/register.js
+          test -f js/upload.js
+          test -f js/edit.js
+
+      - name: Success
+        run: echo "All required project files exist."
