@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit | My Web App</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <h2>My Web App</h2>
+
+        <ul>
+            <li><a href="index.html">Login</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="upload.html">Upload</a></li>
+            <li><a href="edit.html" class="active">Edit</a></li>
+        </ul>
+    </nav>
+
+    <!-- Edit Section -->
+    <div class="container">
+
+        <div class="card">
+
+            <h1>Edit Content</h1>
+
+            <p>Update your information below and click <strong>Save Changes</strong>.</p>
+
+            <form id="editForm">
+
+                <div class="form-group">
+                    <label for="editText">Content</label>
+
+                    <textarea
+                        id="editText"
+                        rows="8"
+                        placeholder="Type your content here..."
+                    ></textarea>
+                </div>
+
+                <button
+                    type="button"
+                    onclick="saveEdit()"
+                >
+                    Save Changes
+                </button>
+
+            </form>
+
+            <br>
+
+            <p id="saveStatus"></p>
+
+            <br>
+
+            <a href="home.html">
+                <button type="button">Back to Home</button>
+            </a>
+
+        </div>
+
+    </div>
+
+    <script src="js/edit.js"></script>
+
+</body>
+</html>
